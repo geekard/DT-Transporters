@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Contact</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        border-radius: 5px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f2f2f2">
+    <div class="header">
+      <h1>
+        <img
+          src="./Images/DT Transporters Logo.png"
+          width="auto"
+          height="60"
+          alt=""
+        />
+      </h1>
+      <nav class="circle">
+        <ul>
+          <li>
+            <a href="Index.html">Home</a>
+          </li>
+          <li>
+            <a href="About.html">About Us</a>
+          </li>
+          <li>
+            <a href="Services.html">Services</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+
+    <h3 style="margin-left: 18px">Send us a message</h3>
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+        <label for="State">State</label>
+        <select id="State" name="State">
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttrakhand">Uttrakhand</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="address">
+        <span class="street">Main Office Address:</span>
+        <span class="street">Anuyogipuram, Garh Road, Meerut</span>
+        <span class="street">Uttar Pradesh, India</span>
+        <span class="street">250004</span>
+      </div>
+      <div class="phone">
+        <span>Phone: +91 0123456789</span>
+        <span>Fax: +91 0123456789</span>
+      </div>
+
+      <div class="email">
+        <span class="email">Ask your questions on email</span>
+        <a class="email" href="https://gmail.com/"
+          ><i class="icon-email"></i>dt-ques@gmail.com</a
+        >
+      </div>
+      <div class="copyright">
+        <span>© 2021 DT Transportation Co. Ltd.</span>
+      </div>
+    </div>
+  </body>
+</html>
